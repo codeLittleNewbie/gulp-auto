@@ -1,18 +1,26 @@
 {
-  "name": "demo",
+  "name": "moivecat",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "description": "cat host moive..",
+  "main": "index.js",
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
     "start": "./node_modules/.bin/http-server -a localhost -p 9000 -o",
-    "pretest":"npm install",
-    "test": "./node_modules/.bin/browser-sync start --server dist --files 'dist/index.html --no-notify'"
+    "pretest": "npm install",
+    "test": "./node_modules/.bin/browser-sync start --server src --files 'src/index.html --no-notify'"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeLittleNewbie/moivecat.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "keywords": [],
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/codeLittleNewbie/moivecat/issues"
+  },
+  "homepage": "https://github.com/codeLittleNewbie/moivecat#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
@@ -23,6 +31,6 @@
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
-    "http-server”: "^1.0.1"
+    "http-server": "^0.10.0"
   }
 }
