@@ -23,6 +23,6 @@
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
-    "http-serve": "^1.0.1"
+    "http-server”: "^1.0.1"
   }
 }
